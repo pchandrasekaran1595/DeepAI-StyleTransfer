@@ -2,6 +2,7 @@ import os
 import sys
 import shutil
 import requests
+# import webbrowser
 
 import warnings
 warnings.filterwarnings("ignore")
@@ -9,7 +10,7 @@ warnings.filterwarnings("ignore")
 
 READ_PATH = "Files"
 SAVE_PATH = "Processed"
-REQUEST_URL = "https://api.deepai.org/api/neural-style"
+REQUEST_URL = "https://api.deepai.org/api/CNNMRF"
 
 
 def main():
@@ -43,6 +44,9 @@ def main():
             "api-key" : os.environ["DEEPAI_KEY"],
         }
     )
+
+    # webbrowser.open(response.json()["output_url"])
+    
     download = requests.get(response.json()["output_url"], stream=True)
     if download.status_code == 200:
         with open(os.path.join(SAVE_PATH, "Stylized.jpg"), "wb") as f:
