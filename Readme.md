@@ -1,4 +1,4 @@
-## **Image Colorization from the Command Line using DeepAI API**
+## **Style Transfer from the Command Line using DeepAI API**
 
 - Prerequisites --> Python 3.8.x or 3.9.x
 - Read Path &nbsp;--> `./Files`
