@@ -11,4 +11,5 @@
 
 <br>
 
-- `--file, -f`- Image Filename (including extension)
+- `--style, -sy` - Style Image Filename (including extension)
+- `--file, -f` &nbsp;&nbsp;&nbsp; - Image Filename (including extension)
